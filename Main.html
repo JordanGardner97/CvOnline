@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="Style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -18,7 +18,7 @@
 	<div class="container-fluid" style="border: 3px solid">
 		<nav class="my-navbar navbar navbar-inverse" style="position: fixed; width: 97%">
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="#">Jordan Gardner</a>
+				<a class="navbar-brand" href="#"><font face="Castellar">Jordan Gardner</font></a>
 			</div>
 			<ul class="nav navbar-nav" >
 				<li><a href="#">Home</a></li>
@@ -33,7 +33,7 @@
 		<header>
 			<br/><br/>
 			<h4>Welcome</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oratio me istius philosophi non offendit; Hic nihil fuit, quod quaereremus. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Quae contraria sunt his, malane? Duo Reges: constructio interrete. Hanc ergo intuens debet institutum illud quasi signum absolvere.</p>
+			
 			<div id="welcomeButtons">
 				<button type="button" class="btn btn-success">Download my CV</button>&nbsp;&nbsp;&nbsp;
 				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" >Contact me</button>
@@ -160,10 +160,17 @@
 					  <h4 class="modal-title">Modal Header</h4>
 					</div>
 					<div class="modal-body">
-					  <p>Some text in the modal.</p>
-					</div>
+					  <div class="form-group">
+							<label for="email">Email address:</label>
+							<input type="email" class="form-control" id="email">
+						</div>
+						<div class="form-group">
+							<label for="YourMessage">Your Message:</label>
+							<input type="YourMessage" class="form-control" id="YourMessage">
+						</div>
 					<div class="modal-footer">
-					  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Send</button>
 					</div>
 				  </div>
 
