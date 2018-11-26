@@ -1,0 +1,24 @@
+
+
+#aboutMe, #education, #projects, #workExp, header{
+  margin-left: 	5em;
+  padding-top:	5em;
+}
+
+header {
+  color:			green;
+}
+
+header p{
+  color:			black;
+  padding:		1em 10em 0em 10em;
+}
+
+#welcomeButtons {
+
+  display: 		table;
+  margin: 		0 auto;
+}
+.my-navbar{
+  background: #2EE513;
+}
