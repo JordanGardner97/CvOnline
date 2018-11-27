@@ -1,12 +1,12 @@
 
 
-#aboutMe, #education, #projects, #workExp, header{
+#aboutMe, #education, #CollegeResults, #workExp, header{
   margin-left: 	5em;
   padding-top:	5em;
 }
 
 header {
-  color:			green;
+  color:			blue;
 }
 
 header p{
@@ -14,12 +14,50 @@ header p{
   padding:		1em 10em 0em 10em;
 }
 
-#welcomeButtons {
+.My-buttons{
+  padding-top: 5em;
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
-  display: 		table;
-  margin: 		0 auto;
+#welcomeButtons {
+float:center;
+  
 }
 .my-navbar{
   background: #1104ce;
 }
 
+
+.my-Img{
+  float:center;
+  height: 20em;
+  width: 20em;
+  border: 0.5em solid black;
+  margin-left: auto;
+	margin-right: auto;
+  display: block;
+
+}
+
+
+#buttons{
+  margin-left: auto;
+	margin-right: auto;
+  display: block;
+  padding: 2em;
+}
+
+.my-btn{
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#ImgDiv{
+  padding-top:2em;
+}
+
+.downloadbtn{
+  background:white;
+}
