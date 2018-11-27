@@ -43,21 +43,31 @@ float:center;
 
 
 #buttons{
-  margin-left: auto;
-	margin-right: auto;
-  display: block;
+ 
   padding: 2em;
+  background-color: grey;
 }
 
-.my-btn{
-  margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
+
 #ImgDiv{
   padding-top:2em;
+  background-color: grey;
 }
 
 .downloadbtn{
   background:white;
+}
+
+#DownloadCv{
+  background: white;
+}
+
+#Name{
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#searchBar{
+  margin-right: 500em;
 }

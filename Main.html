@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,16 +16,25 @@
 <body>
 
 	<div class="container-fluid" style="border: 3px solid">
-		<nav class="my-navbar navbar navbar-inverse" style="position: fixed; width: 97%">
+		<nav class="my-navbar navbar navbar-inverse navbar-fixed-top" >
 			<div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                          </button>
+				
+				
 				<a class="navbar-brand" href="#"><font face="Castellar">Jordan Gardner</font></a>
-			</div>
+				
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav" >
-				<li><a href="#aboutMe">About me</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#CollegeResults">College Results</a></li>
-				<li><a href="#workExp">Work Experience</a></li>
-				<li><button class="downloadbtn btn btn-primary navbar-btn"><a href="PhotosAndFiles/Jordan Gardner CV.docx" download="filename">Download CV</a></button></li>
+				<li><a href="#aboutMe">About me <span class="glyphicon glyphicon-user"></span></a></li>
+				<li><a href="#education">Education <span class="glyphicon glyphicon-education"></span></a></li>
+				<li><a href="#CollegeResults">College Results </a></li>
+				<li><a href="#workExp">Work Experience <span class="glyphicon glyphicon-briefcase"></span></a></li>
+				<li><a href="#workExp">Technologies <span class="glyphicon glyphicon-hdd"></span></a></li>
 				<form class="navbar-form navbar-right" action="/action_page.php">
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="Search" name="search">
@@ -34,8 +42,10 @@
 							<button class="btn btn-default" type="submit">
 								<i class="glyphicon glyphicon-search"></i>
 							</button>
-			</ul>
-			
+            </ul>
+         </div>
+        </div>
+        </div>
 		</nav>
 
 		
@@ -45,19 +55,26 @@
 			
 				<div id = ImgDiv>
 				<img class="my-Img img-responsive img-circle" src="PhotosAndFiles/cvPhoto.png" alt="CV Photo">
-			  </div>
+				<div class="container text-center" id="top-text">
+						<h1 class="asap-font" id="my-name">Jordan Gardner</h1>
+						<h2 class="asap-font" id="my-name">Software Developement Student</h2>
+
+						</div>
+				</div>
+				
+
 				<div id="buttons">
-					
-					<button type="button" class="my-btn btn btn-success" data-toggle="modal" data-target="#myModal" >Contact me</button>
+					<center>
+					<button type="button" class="my-btn btn btn-success" data-toggle="modal" data-target="#myModal" >Contact me <span class="glyphicon glyphicon-send"></span></button>
+					<button type="button" class="my-btn btn btn-success"><a href="PhotosAndFiles/Jordan Gardner CV.docx" download="filename">Download CV <span class="glyphicon glyphicon-download"></span></a></button>
+          </center>
+
+
 				</div>
 			
 		
 
 		<section>
-
-			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 			<div id="aboutMe">
 				<h1>About me</h1>
@@ -74,8 +91,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oratio me istius philosophi non offendit; Hic nihil fuit, quod quaereremus. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Quae contraria sunt his, malane? Duo Reges: constructio interrete. Hanc ergo intuens debet institutum illud quasi signum absolvere.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oratio me istius philosophi non offendit; Hic nihil fuit, quod quaereremus. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Quae contraria sunt his, malane? Duo Reges: constructio interrete. Hanc ergo intuens debet institutum illud quasi signum absolvere.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oratio me istius philosophi non offendit; Hic nihil fuit, quod quaereremus. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Quae contraria sunt his, malane? Duo Reges: constructio interrete. Hanc ergo intuens debet institutum illud quasi signum absolvere.</p>
-				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+				
 			</div>
 
 			<div id="CollegeResults">
@@ -83,7 +99,7 @@
 				<p>Look through my college CollegeResults below</p>
 
 
-				<ul class="nav nav-pills">
+				<ul class="tab nav nav-tabs">
 					<li class="active"><a  href="#1a" data-toggle="tab">Fourth Year</a></li>
 					<li><a  href="#2a" data-toggle="tab">Third Year</a></li>
 					<li><a  href="#3a" data-toggle="tab">Second Year</a></li>
@@ -347,7 +363,7 @@
 						</div>
 					<div class="modal-footer">
 						<button type="button" class="my-button btn btn-default" data-dismiss="modal">Close</button>
-						<button onclick="sendMessageFunction()" type="button" class="my-button btn btn-default" data-dismiss="modal">Send</button>
+						<button onclick="sendMessageFunction()" type="button" class="my-button btn btn-success" data-dismiss="modal">Send</button>
 					</div>
 				  </div>
 
