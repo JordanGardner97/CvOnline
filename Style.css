@@ -3,6 +3,7 @@
 #aboutMe, #education, #CollegeResults, #workExp, header{
   margin-left: 	5em;
   padding-top:	5em;
+  padding-right: 5em;
 }
 
 header {
@@ -54,19 +55,8 @@ float:center;
   
 }
 
-.downloadbtn{
-  background:white;
-}
 
-#DownloadCv{
-  background: white;
-}
 
-#Name{
-  margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
 
 #searchBar{
   margin-right: 500em;
@@ -75,4 +65,115 @@ float:center;
 .jumbotron {
   color: white;
   background-color: black;    
+  width:100%;
 }
+
+
+
+
+#tech{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+/* Other style */ 
+
+
+p {
+  padding: 2%;
+  background: #363636;
+  color: whitesmoke;
+  border: 1px solid #fce29f;
+  border-radius: .25em;
+}
+
+
+
+.carousel .item img {
+   
+  width: 100%;
+  height: 23em;
+}
+
+.myDiv{
+  size: 0ch;
+}
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+
+#CollegeResults{
+  display:none;
+}
+
+#Olm{
+  width:100%;
+  height:12em;
+}
+
+#SocailMedia{
+  margin:0.5em
+}
+
+.Itt{
+  margin:1em;
+}
+
+.OlmDiv{
+  margin:1em;
+}
+
+#IttLogo{
+  width:100%;
+  height:12em;
+  
+  
+}
+
+.Show{
+  background: aqua;
+}
+  
